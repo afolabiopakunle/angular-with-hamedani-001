@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
+
   color: boolean;
+  liked: boolean;
 
   email = event.currentTarget as HTMLInputElement;
 
@@ -16,5 +18,9 @@ export class AppComponent  {
 
   onKeyUp() {
     console.log(this.email)
+  }
+
+  returnLike() {
+    this.liked = !this.liked;
   }
 }
