@@ -8,11 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent  {
   color: boolean;
 
+  email = event.currentTarget as HTMLInputElement;
+
   changeColor() {
     this.color = !this.color;
   }
 
-  onKeyUp($event) {
-    console.log($event)
+  onKeyUp() {
+    console.log(this.email)
   }
 }
