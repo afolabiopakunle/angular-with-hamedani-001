@@ -1,4 +1,5 @@
 <div class="container">
   <app-courses></app-courses>
-  <h1>Angular</h1>
+  <button class="btn btn-secondary" (click)="changeColor()">Change Color</button>
+  <h1 [class.green]="color">Angular</h1>
 </div>
