@@ -11,4 +11,8 @@ export class AppComponent  {
   changeColor() {
     this.color = !this.color;
   }
+
+  onKeyUp($event) {
+    console.log($event)
+  }
 }

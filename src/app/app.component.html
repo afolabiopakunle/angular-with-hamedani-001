@@ -2,4 +2,6 @@
   <app-courses></app-courses>
   <button class="btn btn-secondary" (click)="changeColor()">Change Color</button>
   <h1 [class.green]="color">Angular</h1>
+  <input type="text" #myInput (keyup.enter)="onKeyUp(myInput.value)" class="form-control my-3">
+  <p class="p-3 rounded" [style.backgroundColor]="color ? 'skyblue': 'orange'">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia veniam laudantium aliquam perferendis voluptas modi, illo omnis corrupti veritatis ipsum! Numquam sed ex officia magnam magni cupiditate officiis doloribus aliquid.</p>
 </div>
