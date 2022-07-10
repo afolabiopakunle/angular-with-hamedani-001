@@ -1,0 +1,26 @@
+<nav class="nav nav-pills nav-fill">
+  <a
+    class="nav-link"
+    [class.active]="viewMode == 'map'"
+    (click)="viewMode = 'map'"
+    aria-current="page">Map</a>
+  <a
+    class="nav-link"
+    [class.active]="viewMode == 'traffic'"
+    (click)="viewMode = 'traffic'">Traffic</a>
+  <a class="nav-link"
+  [class.active]="viewMode==='code'"
+  (click)="viewMode='code'"
+  >Code</a>
+  <a class="nav-link"
+  [class.active]="viewMode==='api'"
+  (click)="viewMode='api'"
+  >API</a>
+</nav>
+
+<ng-container [ngSwitch]="viewMode">
+  <div *ngSwitchCase="'map'">Map</div>
+  <div *ngSwitchCase="'traffic'">Traffic</div>
+  <div *ngSwitchCase="'code'">Code</div>
+  <div *ngSwitchCase="'api'">API</div>
+</ng-container>
