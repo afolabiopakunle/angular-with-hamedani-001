@@ -9,10 +9,11 @@ import { SummaryPipe } from './summary.pipe';
 import { TitleCasePipe } from './title-case.pipe';
 import { FavouriteComponent } from './favourite/favourite.component';
 import { ReusablePanelComponent } from './reusable-panel/reusable-panel.component';
+import { IfContainerComponent } from './if-container/if-container.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, CoursesComponent, FavouriteComponent, ReusablePanelComponent, SummaryPipe, TitleCasePipe ],
+  declarations: [ AppComponent, CoursesComponent, FavouriteComponent, ReusablePanelComponent, SummaryPipe, TitleCasePipe, IfContainerComponent ],
   providers: [CourseService],
   bootstrap:    [ AppComponent ]
 })

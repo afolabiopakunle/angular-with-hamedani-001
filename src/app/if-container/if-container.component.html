@@ -1,0 +1,9 @@
+<div *ngIf="students.length > 0; else noStudent">
+  <h4>Students</h4>
+  <ul>
+    <li *ngFor="let student of students">{{ student }}</li>
+  </ul>
+</div>
+<ng-template  #noStudent>
+  <h4 class="text-danger">No students yet...</h4>
+</ng-template >
