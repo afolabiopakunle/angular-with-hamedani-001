@@ -12,10 +12,11 @@ import { ReusablePanelComponent } from './reusable-panel/reusable-panel.componen
 import { IfContainerComponent } from './if-container/if-container.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForComponent } from './ng-for/ng-for.component';
+import { AppInputFormatDirective } from './app-input-format.directive';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, CoursesComponent, FavouriteComponent, ReusablePanelComponent, SummaryPipe, TitleCasePipe, IfContainerComponent, NgSwitchComponent, NgForComponent ],
+  declarations: [ AppComponent, CoursesComponent, FavouriteComponent, ReusablePanelComponent, SummaryPipe, TitleCasePipe, IfContainerComponent, NgSwitchComponent, NgForComponent, AppInputFormatDirective ],
   providers: [CourseService],
   bootstrap:    [ AppComponent ]
 })
