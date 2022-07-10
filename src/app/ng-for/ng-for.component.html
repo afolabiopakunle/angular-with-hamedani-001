@@ -1,6 +1,10 @@
-<div>
-<ul>
-  <li [class.isOdd]="isOdd" *ngFor="let course of courses; odd as isOdd"
-  >{{course.name}}</li>
+<input [(ngModel)]="newCourse" class="form-control" type="text" (keyup.enter)="updateCourses()">
+<div *ngIf="courses.length > 1; else noCourses">
+<ul class="list-group">
+  <li class="my-2 d-flex list-group-item" [class.isOdd]="isOdd" *ngFor="let course of courses; odd as isOdd" (click)="conlog()"
+  >{{course.name}} <button (click)="deleteCourse(course)" class="ms-auto btn btn-sm btn-danger">x</button></li>
 </ul>
 </div>
+<ng-template #noCourses>
+  <div class="text-warning">No courses yet...</div>
+</ng-template>
