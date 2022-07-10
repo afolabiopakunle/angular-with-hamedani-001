@@ -1,4 +1,7 @@
 <i class="fa" 
-[class.fa-heart-o]="!liked"
-[class.fa-heart]="liked"
+[ngClass]="
+{'fa-heart-o': !liked,
+ 'fa-heart': liked
+}
+"
  aria-hidden="true" (click)="likeClicked()"></i>
