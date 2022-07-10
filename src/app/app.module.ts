@@ -11,10 +11,11 @@ import { FavouriteComponent } from './favourite/favourite.component';
 import { ReusablePanelComponent } from './reusable-panel/reusable-panel.component';
 import { IfContainerComponent } from './if-container/if-container.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
+import { NgForComponent } from './ng-for/ng-for.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, CoursesComponent, FavouriteComponent, ReusablePanelComponent, SummaryPipe, TitleCasePipe, IfContainerComponent, NgSwitchComponent ],
+  declarations: [ AppComponent, CoursesComponent, FavouriteComponent, ReusablePanelComponent, SummaryPipe, TitleCasePipe, IfContainerComponent, NgSwitchComponent, NgForComponent ],
   providers: [CourseService],
   bootstrap:    [ AppComponent ]
 })

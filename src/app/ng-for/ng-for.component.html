@@ -1,0 +1,6 @@
+<div>
+<ul>
+  <li [class.isOdd]="isOdd" *ngFor="let course of courses; odd as isOdd"
+  >{{course.name}}</li>
+</ul>
+</div>
